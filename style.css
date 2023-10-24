@@ -1,0 +1,398 @@
+body {
+    background-color: #F0F0F0;
+    display: block;
+    /* flex-direction: column; 
+    justify-content: space-between; */
+    /* justify-content: center;
+    align-items: center; */
+    /* background-image: url("/assets/images/5329647.jpg");
+    background-size: cover; */
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #36384D;
+    height: 625px;
+    width: 1250px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+.container-box {
+    height: 550px;
+    width: 830px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+}
+.container-box.submitted {
+    display: none;
+}
+.container-box-img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+.container-box-img img{
+    height: 500px;
+} 
+
+.container-box-info {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.container-box-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+.container-box-description {
+    width: 400px;
+    margin-top: -10px;
+    font-size: 16px;
+}
+.container-box-description ul {
+    list-style: none;
+    margin-left: -40px;
+}
+.container-box-description ul li{
+    margin-bottom: 10px;
+}
+.container-box-description ul li span{
+    padding-top: 20px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+.container-box-description ul li img{
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+}
+.container-box-form {
+    margin-top: 40px;
+}
+.form-title{
+    font-size: 9px;
+    margin-bottom: -5px;
+    display: flex;
+}
+.invalid-input.true {
+    display: inline-flex;
+    position: relative;
+    color: hsl(4, 100%, 67%);
+    padding-top: 15px;
+    padding-left: 160px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.invalid-input {
+    display: none;
+}
+.form-input {
+    margin-bottom: 15px;
+}
+.form-input-email {
+    width: 320px;
+    height: 45px;
+    border-radius: 5px;
+    border-width: 0.8px;
+    border-color: hsl(0, 0%, 75%);
+    padding-left: 20px;
+}
+.form-input-email.invalid {
+    border-color: hsl(0, 100%, 52%);
+    background-color: hsl(0, 100%, 93%);
+    color: hsl(0, 100%, 63%);
+}
+.form-button-submit {
+    width: 340px;
+    height: 45px;
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.form-button-submit:hover {
+    width: 340px;
+    height: 45px;
+    border-radius: 8px;
+    border-width: 0px;
+    box-shadow: 5px 5px 5px 5px rgba(255, 98, 87, 0.15);
+    background-color: hsl(4, 100%, 67%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-msg.hidden {
+    display: none;
+}
+.container-msg {
+    height: 450px;
+    width: 500px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 100%);
+    display: block;
+    text-align: left;
+}
+.container-msg-inner {
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+.msg-header h1 {
+    font-size: 40px;
+    color: hsl(234, 29%, 20%);
+    line-height: 45px;
+}
+.msg-content {
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 30px;
+}
+.user-email {
+    font-weight: 700;
+}
+#buttonDismiss {
+    width: 340px;
+    height: 45px;
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+#buttonDismiss:hover {
+    width: 340px;
+    height: 45px;
+    border-radius: 8px;
+    border-width: 0px;
+    box-shadow: 5px 5px 5px 5px rgba(255, 98, 87, 0.15);
+    background-color: hsl(4, 100%, 67%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.attribution {
+    align-self: last baseline;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1230px;
+    color: #F0F0F0;
+    background-color: hsl(234, 29%, 20%);
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.attribution a{
+    color: #F0F0F0;
+}
+.space {
+    padding-left: 4px;
+}
+
+@media screen and (max-width: 1024px){
+    .container {
+        width: 900px;
+    }
+    .attribution {
+        width: 880px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container-msg {
+        height: 450px;
+        width: 500px;
+        border-radius: 25px;
+        background-color: hsl(0, 0%, 100%);
+        display: block;
+        text-align: left;
+    }
+    .container-msg-inner {
+        margin-top: 50px;
+        margin-left: 80px;
+        margin-right: 50px;
+    }
+    .msg-header h1 {
+        font-size: 40px;
+        color: hsl(234, 29%, 20%);
+        line-height: 45px;
+    }
+    .msg-content {
+        color: hsl(234, 29%, 20%);
+        margin-bottom: 30px;
+    }
+    .user-email {
+        font-weight: 700;
+    }
+    #buttonDismiss {
+        width: 340px;
+        height: 45px;
+        border-radius: 8px;
+        border-width: 0px;
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+    }
+    .container {
+        width: 700px;
+    }
+    .container-box {
+        width: 600px;
+        display: block;
+    }
+    .attribution {
+        width: 680px;
+    }
+    .container-box-img {
+        position: absolute;
+        top: 0;
+        left: 120px;
+        margin-top: 40px;
+        margin-left: 10px;
+        width: 400px;
+        height: 100px;
+    }
+    .container-box-img img{
+        object-fit: cover;
+        width: 450px;
+        height: 150px;
+    } 
+    
+    .container-box-info {
+        margin-top: 170px;
+        margin-left: 125px;
+    }
+    .container-box-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: hsl(234, 29%, 20%);
+    }
+    .container-box-description {
+        width: 350px;
+        margin-top: -10px;
+        font-size: 13px;
+    }
+    .container-box-form {
+        margin-top: 5px;
+    }
+    .form-input-email {
+        width: 320px;
+        height: 45px;
+        border-radius: 5px;
+        border-width: 0.8px;
+        border-color: hsl(0, 0%, 75%);
+        padding-left: 20px;
+    }
+
+    .form-button-submit {
+        width: 340px;
+        height: 45px;
+        border-radius: 8px;
+        border-width: 0px;
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+    }
+
+}
+
+
+@media screen and (max-width: 376px){
+    .container-msg {
+        height: 200px;
+        width: 320px;
+    }
+    .container-msg-inner {
+        margin-top: -150px;
+        margin-left: 35px;
+        margin-right: 25px;
+    }
+    .msg-header h1 {
+        font-size: 40px;
+        color: hsl(234, 29%, 20%);
+        line-height: 45px;
+    }
+    .msg-content {
+        color: hsl(234, 29%, 20%);
+        margin-bottom: 100px;
+    }
+    .user-email {
+        font-weight: 700;
+    }
+    #buttonDismiss {
+        width: 250px;
+    }
+    .container {
+        width: 320px;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .container-box {
+        background-color: hsl(0, 0%, 100%);
+        width: 300px;
+        display: block;
+    }
+    .attribution {
+        width: 300px;
+    }
+    .container-box-img {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        margin-top: -10px;
+        margin-left: 22px;
+    }
+    .container-box-img img{
+        object-fit: cover;
+        width: 300px;
+        height: 150px;
+    } 
+    
+    .container-box-info {
+        margin-top: 130px;
+        margin-left: 5px;
+    }
+    .container-box-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: hsl(234, 29%, 20%);
+    }
+    .container-box-description {
+        width: 300px;
+        margin-top: -10px;
+        font-size: 13px;
+    }
+    .container-box-form {
+        margin-top: 25px;
+    }
+    .form-input-email {
+        width: 270px;
+        height: 45px;
+        border-radius: 5px;
+        border-width: 0.8px;
+        border-color: hsl(0, 0%, 75%);
+        padding-left: 20px;
+    }
+
+    .form-button-submit {
+        width: 292px;
+        height: 45px;
+        border-radius: 8px;
+        border-width: 0px;
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+    }
+    .attribution{
+        font-size: 10px;
+    }
+    .attribution a{
+        color: #F0F0F0;
+    }
+}
