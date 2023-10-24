@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution by Me](https://github.com/halfaruqy/newsletter-sign-up-with-success-message-main)
-- Live Site URL: [Live Site](https://halfaruqy.github.io) 
+- Live Site URL: [Live Site](https://halfaruqy.github.io/newsletter-sign-up-with-success-message-main/) 
 
 ## My process
 ### Styling First
